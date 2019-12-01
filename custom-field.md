@@ -14,7 +14,7 @@ Show them everywhere. Load and display your custom field values in views file po
 Go through to **Admin Dashboard** --> **Plugins** --> Activate this plugin.
 Currently, this plugin support **Pages** and **Blog**.
 
-####View how to use it:
+#### View how to use it:
 
 **get_field**: get a custom field from a model
 ```php
@@ -64,4 +64,22 @@ $page = \Botble\Page\Models\Page::find(1);
 foreach(get_field($page->id, PAGE_MODULE_SCREEN_NAME, 'foo_repeater') as $item) {
    $hasBar = has_sub_field($item, 'bar');
 }
+```
+
+#### Add support custom fields for your plugin. Add to function `boot()` of your plugin service provider.
+
+```php
+$this->app->booted(function () {
+    if (defined('CUSTOM_FIELD_MODULE_SCREEN_NAME')) {
+        \CustomField::registerModule(YOUR_PLUGIN_MODULE_SCREEN_NAME)
+            ->registerRule('basic', __('Your plugin name'), YOUR_PLUGIN_MODULE_SCREEN_NAME, function () {
+                return $this->app->make(YourPluginInterface::class)->pluck('name', 'id');
+            })
+            ->expandRule('other', 'Model', 'model_name', function () {
+                return [
+                    YOUR_PLUGIN_MODULE_SCREEN_NAME => __('Your plugin name'),
+                ];
+            });
+    }
+});
 ```

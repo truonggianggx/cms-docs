@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 4.1](#version_4_1)
 - [Botble 4.0](#version_4_0)
 - [Botble 3.6](#version_3_6)
 - [Botble 3.5.1](#version_3_5_1)
@@ -25,6 +26,23 @@
 - [Botble 2.1](#version_2_1)
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
+
+<a name="version_4_1"></a>
+## Botble 4.1
+### 01-12-2019
+
+- Fix bug in plugin member.
+- Improve custom fields.
+- Improve media.
+- Change to use `laravel/tinker` 2.0
+- Change to use `mpociot/laravel-apidoc-generator` 4.0
+- Add command `php artisan cms:plugin:make:crud` (Video tutorial: https://www.youtube.com/watch?v=GAnoZbGHE28)
+- Fix UI
+- Add config for Travis CI
+- Fix mail variables
+- Fix SEO helper, cache issue in media.
+- Add option to disable preview feature (Ex: `\SlugHelper::disablePreview(Post::class)`)
+- Refactor code.
 
 <a name="version_4_0"></a>
 ## Botble 4.0
