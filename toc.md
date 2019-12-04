@@ -24,6 +24,7 @@
     - [Layouts](theme-layout.md)
     
 - Core
+    - [Commands](commands.md)
     - [Roles & permissions](role_permission.md)
     - [Media](media.md)
     - [Filters](filters.md)
