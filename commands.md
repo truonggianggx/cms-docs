@@ -9,6 +9,7 @@
 - [Deactivate a plugin](#deactivate-plugin)
 - [Remove a plugin](#remove-plugin)
 - [Theme commands](#theme-commands)
+- [Widget commands](#widget-commands)
     
 List of commands are used in Botble CMS
 
@@ -141,6 +142,17 @@ Ex:
 
 ![Theme commands](./images/theme-commands.png)
 
+- Publish theme's assets
+```
+php artisan cms:theme:assets:publish
+```
+
+- Delete all theme's assets in `public/themes/your-theme`
+```
+php artisan cms:theme:assets:remove
+```
+
+
 - Install theme sample data
 
 ```
@@ -153,3 +165,25 @@ in `platform/themes/your-theme/data/sample.sql`.
 Source code:
 
 ![Theme install sample data](./images/theme-install-sample-data.png)
+
+<a name="widget-commands"></a>
+## Widget commands
+A widget must be go with a theme so that it always located in a theme.
+
+- Create a widget. The widget created will be located in `/platform/themes/your-theme/widgets`
+
+```
+php artisan cms:widget:create <widget>
+```
+
+It's auto registered to your website using file `registration.php`.
+
+- Remove a widget
+
+```
+php artisan cms:widget:remove <widget>
+```
+
+Ex:
+
+![Widget commands](./images/widget-commands.png)
