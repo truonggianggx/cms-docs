@@ -8,6 +8,7 @@
 - [Activate a plugin](#activate-plugin)
 - [Deactivate a plugin](#deactivate-plugin)
 - [Remove a plugin](#remove-plugin)
+- [Theme commands](#theme-commands)
     
 List of commands are used in Botble CMS
 
@@ -53,7 +54,7 @@ Ex:
 It's used to create a package. The package created will be located in `/platform/packages`
 
 ```
-php artisan cms:package:create <plugin>
+php artisan cms:package:create <package>
 ```
 
 Ex:
@@ -116,3 +117,39 @@ Ex:
 
 That command will deactivate plugin, remove that plugin's assets, tables...
 
+<a name="theme-commands"></a>
+## Theme commands
+
+- Create a theme. It's used to create a front theme for Botble CMS. The theme created will be located in `/platform/themes`
+```
+php artisan cms:theme:create <theme>
+```
+
+- To activate a theme
+
+```
+php artisan cms:theme:activate <theme>
+```
+
+- To remove a theme. You can remove the activated theme, you need to activate another theme to remove it.
+
+```
+php artisan cms:theme:remove <theme>
+```
+
+Ex:
+
+![Theme commands](./images/theme-commands.png)
+
+- Install theme sample data
+
+```
+php artisan cms:theme:install-sample-data
+```
+
+This command is used to import sample data for theme. Before run it, you have to create sample data for your theme
+in `platform/themes/your-theme/data/sample.sql`.
+
+Source code:
+
+![Theme install sample data](./images/theme-install-sample-data.png)
