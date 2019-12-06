@@ -12,8 +12,6 @@ PHP platform based on Laravel Framework 6.x
 
 Created: `07/06/2016`
 
-Current version: `4.0`
-
 By: [Botble Technologies](https://botble.com)
 
 Email: [sangnguyenplus@gmail.com](mailto:sangnguyenplus@gmail.com)
