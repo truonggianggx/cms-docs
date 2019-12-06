@@ -1,3 +1,5 @@
+# FAQ
+
 ## How to add new admin menu for new plugin?
 
 - Open `/plugins/<your-plugin>/src/Providers/<YourPlugin>ServiceProvider.php`. Add below code to function `boot`

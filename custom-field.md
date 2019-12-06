@@ -1,4 +1,6 @@
-# What is custom fields?
+# Custom Fields
+
+## What is custom fields?
 
 Use the Custom Fields plugin to take full control of your Botble edit screens & custom field data.
 
@@ -8,7 +10,7 @@ Fields can be added all over including posts, pages, categories, tags!
 
 Show them everywhere. Load and display your custom field values in views file post.blade.php, page.blade.php, tag.blade.php, category.blade.php of your theme (/public/themes/<your theme>/views) with our hassle free developer friendly functions!
 
-# How to use Custom Fields plugin
+## How to use Custom Fields plugin
 
 #### Active this plugin
 Go through to **Admin Dashboard** --> **Plugins** --> Activate this plugin.
