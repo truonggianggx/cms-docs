@@ -25,11 +25,15 @@
 <a name="upgrade-4.1"></a>
 ## Upgrade to 4.1
 
-- Replace all `config('media.` to `config('core.media.media.`
-- Replace all `trans('media::` to `trans('core/media::`
-- Replace all `views('media::` to `view('core/media::`
-- Replace all `@include('media::` to `@include('core/media::`
-- Replace all `@extends('media::` to `@extends('core/media::`
+- Override folder `app`, `platform` from the update source code.
+- Override file `composer.json` `and composer.lock` from the update source code.
+
+- If you're using config, trans or views of media module in your plugins/theme, please do bellow step in your plugins/theme
+    + Replace all `config('media.` to `config('core.media.media.`
+    + Replace all `trans('media::` to `trans('core/media::`
+    + Replace all `views('media::` to `view('core/media::`
+    + Replace all `@include('media::` to `@include('core/media::`
+    + Replace all `@extends('media::` to `@extends('core/media::`
 
 - Change the way to register media sizes if you add your custom image sizes:
 
