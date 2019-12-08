@@ -1,4 +1,4 @@
-# Commands
+# API
 
 - [Overview](#overview)
 - [Install](#install)
