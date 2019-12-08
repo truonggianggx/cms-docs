@@ -31,13 +31,15 @@
     - [Actions](actions.md)
     - [Shortcode](shortcode.md)
     - [Meta box](meta_box.md)
-    - [Custom fields](custom-field.md)
     - [Dashboard](dashboard.md)
     - [Form builder](form-builder.md)
     - [Slug field](slug-field.md)
     - [Mail](mail.md)
     - [FAQ](faq.md)
     
-- Available plugins
+- Plugins
     - [Gallery](plugin-gallery.md)
     - [Language](plugin-language.md)
+    - [Custom fields](plugin-custom-field.md)
+    - [Simple sliders](plugin-simple-slider.md)
+    
