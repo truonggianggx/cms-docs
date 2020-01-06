@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 4.2](#version_4_2)
 - [Botble 4.1](#version_4_1)
 - [Botble 4.0](#version_4_0)
 - [Botble 3.6](#version_3_6)
@@ -26,6 +27,27 @@
 - [Botble 2.1](#version_2_1)
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
+
+<a name="version_4_2"></a>
+## Botble 4.2
+### 06-01-2020
+
+- Fix bug upload avatar in plugin member.
+- Fix permission issue when changing language.
+- Fix dev commands.
+- Fix error when creating new role.
+- Fix page title.
+- Fix logo in email.
+- Fix menu & audit log.
+- Fix sort order in dashboard widgets.
+- Update UI in login/register form for member.
+- Update plugin `social login` to support plugin member.
+- Update country flags.
+- Update latest code from Laravel framework.
+- Deprecated function `setModuleName()` in forms.
+- Using package `mews/purifier` to prevent XSS attack.
+- Add plugin `cookie consent`.
+- Refactor code.
 
 <a name="version_4_1"></a>
 ## Botble 4.1
