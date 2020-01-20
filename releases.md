@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 5.0](#version_5_0)
 - [Botble 4.2](#version_4_2)
 - [Botble 4.1](#version_4_1)
 - [Botble 4.0](#version_4_0)
@@ -27,6 +28,15 @@
 - [Botble 2.1](#version_2_1)
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
+
+<a name="version_5_0"></a>
+## Botble 5.0
+### 20-01-2020
+- Change admin theme to make it more awesome.
+- Add license.
+- Update ckeditor to allow to add image's caption.
+- Fix ACL module.
+- Fix account plugin.
 
 <a name="version_4_2"></a>
 ## Botble 4.2
