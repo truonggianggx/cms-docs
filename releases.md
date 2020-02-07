@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 5.1](#version_5_1)
 - [Botble 5.0](#version_5_0)
 - [Botble 4.2](#version_4_2)
 - [Botble 4.1](#version_4_1)
@@ -28,6 +29,14 @@
 - [Botble 2.1](#version_2_1)
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
+
+<a name="version_5_1"></a>
+## Botble 5.1
+### 08-02-2020
+- Update admin theme.
+- Improve source code.
+- Update member activity logs.
+- Fix media upload.
 
 <a name="version_5_0"></a>
 ## Botble 5.0
