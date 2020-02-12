@@ -20,13 +20,13 @@ Currently, this plugin support **Pages** and **Blog**.
 
 **get_field**: get a custom field from a model
 ```php
-get_field($id, $screenName, $alias = null, $default = null)
+get_field($id, $className, $alias = null, $default = null)
 ```
 
 Example:
 ```php
 $page = \Botble\Page\Models\Page::find(1);
-$field = get_field($page->id, PAGE_MODULE_SCREEN_NAME, 'foo');
+$field = get_field($page->id, get_class($page), 'foo');
 ```
 
 **has_field**: determine a model has custom field or not
@@ -37,7 +37,7 @@ function has_field($id, $screenName, $alias = null)
 Example:
 ```php
 $page = \Botble\Page\Models\Page::find(1);
-$hasField = has_field($page->id, PAGE_MODULE_SCREEN_NAME, 'foo');
+$hasField = has_field($page->id, get_class($page), 'foo');
 ```
 
 **get_sub_field**: get a repeater field from a parent field with the specified alias
@@ -49,7 +49,7 @@ get_sub_field(array $parentField, $alias, $default = null)
 Example:
 ```php
 $page = \Botble\Page\Models\Page::find(1);
-foreach(get_field($page->id, PAGE_MODULE_SCREEN_NAME, 'foo_repeater') as $item) {
+foreach(get_field($page->id, get_class($page), 'foo_repeater') as $item) {
    $childField = get_sub_field($item, 'bar');
 }
 ```
@@ -63,7 +63,7 @@ has_sub_field(array $parentField, $alias)
 Example:
 ```php
 $page = \Botble\Page\Models\Page::find(1);
-foreach(get_field($page->id, PAGE_MODULE_SCREEN_NAME, 'foo_repeater') as $item) {
+foreach(get_field($page->id, get_class($page), 'foo_repeater') as $item) {
    $hasBar = has_sub_field($item, 'bar');
 }
 ```
