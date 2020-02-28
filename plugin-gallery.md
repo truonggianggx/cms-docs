@@ -3,7 +3,9 @@
 ## Display galleries in theme
 
 ```php
-{!! render_galleries(8); !!}
+@if (function_exists('render_galleries'))
+   {!! render_galleries(8) !!}
+@endif
 ```
 
 It will use template `plugins/gallery/resources/views/gallery.blade.php` to render gallery
