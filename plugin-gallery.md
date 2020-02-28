@@ -3,7 +3,7 @@
 ## Display galleries in theme
 
 ```php
-render_galleries(8);
+{!! render_galleries(8); !!}
 ```
 
 It will use template `plugins/gallery/resources/views/gallery.blade.php` to render gallery
