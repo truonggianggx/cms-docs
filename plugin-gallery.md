@@ -1,14 +1,6 @@
 # Gallery
 
-## How to add gallery to your plugin
-
-- Open `/plugins/<your-plugin>/src/Providers/<YourPlugin>ServiceProvider.php`. Add below code to function `boot`
-
-```php
-\Gallery::registerModule([YourPluginModel::class]);
-```
-
-## Render galleries
+## Display galleries in theme
 
 ```php
 render_galleries(8);
@@ -30,3 +22,29 @@ function render_galleries($limit)
 ```
 
 If you need to custom display of list galleries, you just need to copy the content of `plugins/gallery/resources/views/gallery.blade.php` and customize it in your theme.
+
+## Display galleries for page, post
+
+For page: Add in your-theme/page.blade.php
+
+```php
+@if (defined('GALLERY_MODULE_SCREEN_NAME') && !empty($galleries = gallery_meta_data($page)))
+  {!! render_object_gallery($galleries) !!}
+@endif
+```
+
+For post: Add in your-theme/post.blade.php
+
+```php
+@if (defined('GALLERY_MODULE_SCREEN_NAME') && !empty($galleries = gallery_meta_data($post)))
+    {!! render_object_gallery($galleries, ($post->categories()->first() ? $post->categories()->first()->name : __('Uncategorized'))) !!}
+@endif
+```
+
+## How to add gallery to your plugin
+
+- Open `/plugins/<your-plugin>/src/Providers/<YourPlugin>ServiceProvider.php`. Add below code to function `boot`
+
+```php
+\Gallery::registerModule([YourPluginModel::class]);
+```
